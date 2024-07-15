@@ -5,12 +5,7 @@ PawApp is a mobile application designed for dog lovers. It offers a variety of f
 
 **Table of Contents**
 * Installation
-* Getting Started
 * Key Features
-* How to Use
-* Known Issues
-* Contributing
-* License
 
 ## Installation
 Installation
