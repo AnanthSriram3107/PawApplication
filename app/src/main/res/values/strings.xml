@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Paw</string>
+    <string name="save_favorite_dog_breed">Save Favourite Dog Breed</string>
+    <string name="edittext_favorite_breed_hint">Enter favourite breed</string>
+    <string name="fetch_dog_breed">Fetch Dog Breed</string>
+    <string name="browse_button_text">Browse Breed</string>
+    <string name="select">Select</string>
+    <string name="done">Done</string>
+    <string name="dog_of_the_day">Choose Dog Of the Day</string>
+    <string name="continue_button_text">Continue</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="your_favorite_breed">Your Favourite Breed</string>
+    <string name="view_my_dog_collections">View My Dog Collections</string>
+</resources>
