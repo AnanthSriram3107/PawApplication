@@ -38,7 +38,7 @@ class DogCollectionAdapterTest {
     val activityRule = ActivityScenarioRule(MainActivity::class.java)
 
     private lateinit var adapter: DogCollectionAdapter
-    private val listener = mock(DogCollectionAdapter.onCollectionDeleteListener::class.java)
+    private val listener = mock(DogCollectionAdapter.OnCollectionDeleteListener::class.java)
 
     @Before
     fun setup() {

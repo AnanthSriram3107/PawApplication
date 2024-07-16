@@ -10,7 +10,7 @@ import com.example.paw.utils.Utils
 import com.example.paw.viewmodel.MainActivityViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class DogCollectionActivity : AppCompatActivity(), DogCollectionAdapter.onCollectionDeleteListener {
+class DogCollectionActivity : AppCompatActivity(), DogCollectionAdapter.OnCollectionDeleteListener {
     private lateinit var collectionsRecyclerView: RecyclerView
     private lateinit var dogCollectionAdapter: DogCollectionAdapter
     private val viewModel: MainActivityViewModel by viewModel()

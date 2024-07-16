@@ -14,7 +14,7 @@ import com.example.paw.R
 import com.example.paw.db.DogCollection
 import com.example.paw.view.DogCollectionImages
 
-class DogCollectionAdapter(private val listener: onCollectionDeleteListener) :
+class DogCollectionAdapter(private val listener: OnCollectionDeleteListener) :
     ListAdapter<DogCollection, DogCollectionAdapter.DogCollectionViewHolder>(DiffCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCollectionViewHolder {
@@ -29,7 +29,7 @@ class DogCollectionAdapter(private val listener: onCollectionDeleteListener) :
     }
 
 
-    class DogCollectionViewHolder(itemView: View,private val listener: onCollectionDeleteListener) : RecyclerView.ViewHolder(itemView) {
+    class DogCollectionViewHolder(itemView: View,private val listener: OnCollectionDeleteListener) : RecyclerView.ViewHolder(itemView) {
         private val collectionNameTextView: TextView =
             itemView.findViewById(R.id.collection_textView)
         private val cardView: CardView = itemView.findViewById(R.id.card_view)
@@ -65,7 +65,7 @@ class DogCollectionAdapter(private val listener: onCollectionDeleteListener) :
             return oldItem == newItem
         }
     }
-    interface onCollectionDeleteListener {
+    interface OnCollectionDeleteListener {
         fun onCollectionsDeleted(collectionId: Long)
     }
 }

@@ -23,7 +23,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 import com.example.paw.R
-import com.example.paw.view.PawBrowseBreedActivity
 import java.io.File
 import java.io.FileOutputStream
 
