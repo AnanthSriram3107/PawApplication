@@ -9,5 +9,5 @@ data class DogOfTheDay(
     val month: Int,
     val day: Int,
     val imageUrl: String?,
-    val breed: String? // Optional
+    val breed: String?
 )

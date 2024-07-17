@@ -46,7 +46,7 @@ class MainActivityViewModel(private val favoriteDogDao: FavoriteDogDao) : ViewMo
                 val response = PawApiRepository.api.getRandomDogImage()
                 _dogImage.value = response.message
             } catch (e: Exception) {
-                // Handle error, e.g., set a default image
+               e.printStackTrace()
             }
         }
     }
@@ -58,7 +58,6 @@ class MainActivityViewModel(private val favoriteDogDao: FavoriteDogDao) : ViewMo
                 val response = PawApiRepository.api.getRandomDogImageByBreed(breed)
                 _dogImage.value = response.message
             } catch (e: Exception) {
-                // Handle error, e.g., show an error message
                 e.printStackTrace()
             }
         }
@@ -70,7 +69,6 @@ class MainActivityViewModel(private val favoriteDogDao: FavoriteDogDao) : ViewMo
                 val response = PawApiRepository.api.getImagesByBreed(breed)
                 _dogImages.value = response.message // Update LiveData with list of URLs
             } catch (e: Exception) {
-                // Handle error, e.g., show an error message
                 e.printStackTrace()
             }
         }

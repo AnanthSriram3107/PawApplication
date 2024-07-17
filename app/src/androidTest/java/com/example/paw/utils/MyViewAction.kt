@@ -24,9 +24,6 @@ object MyViewAction {
                 if (childView != null) {
                     uiController.loopMainThreadUntilIdle()
                     childView.performClick()
-                } else {
-                    // Handle case where child view not found
-                    // You might want to throw an exception or log a warning
                 }
             }
         }

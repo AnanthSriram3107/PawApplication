@@ -106,7 +106,7 @@ class PawBrowseBreedActivity : ComponentActivity(), DogImagesAdapter.ImageSelect
             this,
             LinearLayoutManager.VERTICAL,
             false
-        ) // 2 columns, adjust as needed
+        )
         imageRecyclerView.adapter = dogImagesAdapter
     }
 

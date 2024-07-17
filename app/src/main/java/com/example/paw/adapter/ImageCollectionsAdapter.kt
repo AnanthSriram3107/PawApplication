@@ -25,12 +25,12 @@ class ImageCollectionsAdapter : ListAdapter<String, ImageCollectionsAdapter.Imag
 
     class ImageCollectionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val imageView: ImageView =
-            itemView.findViewById(R.id.imageView) // Assuming you have an ImageView with this ID
+            itemView.findViewById(R.id.imageView)
 
         fun bind(imageUrl: String) {
             Glide.with(itemView.context)
                 .load(imageUrl)
-                .placeholder(R.drawable.paw_placeholder) // Use a placeholder image
+                .placeholder(R.drawable.paw_placeholder)
                 .into(imageView)
         }
     }

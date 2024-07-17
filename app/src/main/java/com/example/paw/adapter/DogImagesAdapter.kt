@@ -153,14 +153,12 @@ class DogImagesAdapter(private val listener: ImageSelectionListener) :
                             putExtra(Intent.EXTRA_TEXT, "Check out this awesome dog!\n\nPowered by Dog API app") // Add the message here
                             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                         }
-
-                        // Create IntentChooser
                         val chooser = Intent.createChooser(intent, "Share image via")
                         context.startActivity(chooser)
                     }
 
                     override fun onLoadCleared(placeholder: Drawable?) {
-                        // Handle clearing the placeholder if needed
+                        //Do Nothing
                     }
                 })
         }

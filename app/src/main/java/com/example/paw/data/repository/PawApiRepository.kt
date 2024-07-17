@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object PawApiRepository {
     lateinit var api: PawApiService
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
-        level = HttpLoggingInterceptor.Level.BODY // Set logging level
+        level = HttpLoggingInterceptor.Level.BODY
     }
     private val client = OkHttpClient.Builder()
         .addInterceptor(loggingInterceptor)

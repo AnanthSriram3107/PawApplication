@@ -34,10 +34,9 @@ class PawSplashScreenActivity : AppCompatActivity() {
             if (dogOfTheDay != null) {
                 Glide.with(this@PawSplashScreenActivity)
                     .load(dogOfTheDay.imageUrl)
-                    .placeholder(R.drawable.paw_placeholder) // Set a placeholder image
+                    .placeholder(R.drawable.paw_placeholder)
                     .into(splashImageView)
             } else {
-                // Handle case where there's no dog of the day (e.g., show a default image)
                 splashImageView.setImageResource(R.drawable.paw_placeholder)
             }
         }

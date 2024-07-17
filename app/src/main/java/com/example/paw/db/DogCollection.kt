@@ -14,6 +14,6 @@ data class DogCollection(
 data class CollectionImage(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val collectionId: Int,
-    val imageUrl: String, // Add the imageUrl property here
+    val imageUrl: String,
     val breed: String?
 )

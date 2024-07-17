@@ -91,7 +91,7 @@ class MainActivity : ComponentActivity() {
                             dataSource: com.bumptech.glide.load.DataSource?,
                             isFirstResource: Boolean
                         ): Boolean {
-                            progressBar.visibility = View.GONE // Hide ProgressBar on success
+                            progressBar.visibility = View.GONE
                             return false
                         }
                     })

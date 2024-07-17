@@ -72,7 +72,6 @@ class DogCollectionAdapterTest {
                 )
             onView(withText("Collection 1")).check(matches(isDisplayed()))
 
-            // Check if the second item is displayed correctly
             onView(withId(R.id.recyclerView))
                 .perform(
                     RecyclerViewActions.scrollToPosition<DogCollectionAdapter.DogCollectionViewHolder>(
@@ -110,8 +109,6 @@ class DogCollectionAdapterTest {
         activityRule.scenario.onActivity { activity ->
             val recyclerView = activity.findViewById<RecyclerView>(R.id.recyclerView)
             recyclerView.adapter = adapter
-
-            // Find the delete button in the first item and click it
             onView(withId(R.id.recyclerView))
                 .perform(
                     RecyclerViewActions.actionOnItemAtPosition<DogCollectionAdapter.DogCollectionViewHolder>(
@@ -119,10 +116,8 @@ class DogCollectionAdapterTest {
                     )
                 )
 
-            // Verify that the listener's onCollectionsDeleted method was called with the correct ID
+
             verify(listener).onCollectionsDeleted(1L)
         }
     }
 }
-
-// Helper class to click on a child view within a RecyclerView
