@@ -12,7 +12,7 @@ Installation
 
 Prerequisites:
 
-Android Studio: Version [11] or later with the Android SDK installed. You can download Android Studio from the official website: https://developer.android.com/studio
+Android Studio: Version [12] or later with the Android SDK installed. You can download Android Studio from the official website: https://developer.android.com/studio
 Java: JDK version [11] or later. You can download Java from the official website: https://www.oracle.com/java/technologies/downloads/
 Other dependencies: (List any additional dependencies or libraries required for the app to function, if applicable)
 Steps:
